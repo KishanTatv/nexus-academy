@@ -61,12 +61,12 @@ const NewsLatterBox = () => {
                 gradientUnits="userSpaceOnUse"
               >
                 <stop
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fffff"}
+                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
                   stopOpacity="0.62"
                 />
                 <stop
                   offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fffff"}
+                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
                   stopOpacity="0"
                 />
               </linearGradient>
