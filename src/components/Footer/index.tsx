@@ -15,15 +15,15 @@ const Footer = () => {
                   <Image
                     src={headerImg.src}
                     alt="logo"
-                    className="w-full dark:hidden"
-                    width={105}
+                    className="dark:hidden"
+                    width={120}
                     height={30}
                   />
                   <Image
                     src={headerImg.src}
                     alt="logo"
-                    className="hidden w-full dark:block"
-                    width={105}
+                    className="hidden dark:block"
+                    width={120}
                     height={30}
                   />
                 </Link>
