@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
+import headerImg from "../../../public/images/logo/header-img-2.png"
 
 const Header = () => {
   // Navbar toggle
@@ -55,14 +56,14 @@ const Header = () => {
                   } `}
               >
                 <Image
-                  src="/images/logo/header-img-2.png"
+                  src={headerImg.src}
                   alt="logo"
                   width={140}
                   height={30}
                   className="w-full dark:hidden"
                 />
                 <Image
-                  src="/images/logo/header-img-2.png"
+                  src={headerImg.src}
                   alt="logo"
                   width={140}
                   height={30}
