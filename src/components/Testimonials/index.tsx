@@ -11,7 +11,7 @@ const testimonialData: Testimonial[] = [
     name: "Musharof Chy",
     designation: "Founder @TailGrids",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "Embroidery design and jacqurad design best classes in surat, I learn both courses in shiv design academy, better learning system, better support.",
     image: Auth_1.src,
     star: 5,
   },
@@ -20,7 +20,7 @@ const testimonialData: Testimonial[] = [
     name: "Devid Weilium",
     designation: "Founder @UIdeck",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "Best classes for rapier jacquard design needle maharani jacquard good internship, good work experience, best classes for rapier jacquard.",
     image: Auth_2.src,
     star: 5,
   },
@@ -29,7 +29,7 @@ const testimonialData: Testimonial[] = [
     name: "Lethium Frenci",
     designation: "Founder @Lineicons",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "Good teaching staff. Best place to learning digital print design,Good support me. I will recommend to all to go Shiv Design academy to learning design courses.",
     image: Auth_3.src,
     star: 5,
   },
@@ -40,8 +40,8 @@ const Testimonials = () => {
     <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="What Our Users Says"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="Happy Students"
+          paragraph="Valuable Reviews By Students"
           center
         />
 

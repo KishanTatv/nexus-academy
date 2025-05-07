@@ -13,7 +13,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Nexus Academy Of Design",
-  description: "This is Home for Startup Nextjs Template",
+  description: "Learn design course with nexus academy",
   // other metadata
 };
 

@@ -21,11 +21,10 @@ const Pricing = () => {
           <div className="mb-8 flex justify-center md:mb-12 lg:mb-16">
             <span
               onClick={() => setIsMonthly(true)}
-              className={`${
-                isMonthly
-                  ? "pointer-events-none text-primary"
-                  : "text-dark dark:text-white"
-              } mr-4 cursor-pointer text-base font-semibold`}
+              className={`${isMonthly
+                ? "pointer-events-none text-primary"
+                : "text-dark dark:text-white"
+                } mr-4 cursor-pointer text-base font-semibold`}
             >
               Monthly
             </span>
@@ -36,9 +35,8 @@ const Pricing = () => {
               <div className="relative">
                 <div className="h-5 w-14 rounded-full bg-[#1D2144] shadow-inner"></div>
                 <div
-                  className={`${
-                    isMonthly ? "" : "translate-x-full"
-                  } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-primary transition`}
+                  className={`${isMonthly ? "" : "translate-x-full"
+                    } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-primary transition`}
                 >
                   <span className="active h-4 w-4 rounded-full bg-white"></span>
                 </div>
@@ -46,11 +44,10 @@ const Pricing = () => {
             </div>
             <span
               onClick={() => setIsMonthly(false)}
-              className={`${
-                isMonthly
-                  ? "text-dark dark:text-white"
-                  : "pointer-events-none text-primary"
-              } ml-4 cursor-pointer text-base font-semibold`}
+              className={`${isMonthly
+                ? "text-dark dark:text-white"
+                : "pointer-events-none text-primary"
+                } ml-4 cursor-pointer text-base font-semibold`}
             >
               Yearly
             </span>
@@ -59,43 +56,40 @@ const Pricing = () => {
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
-            packageName="Lite"
+            packageName="🏆 Foundation"
             price={isMonthly ? "40" : "120"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Perfect for hobbyists or newcomers exploring the world of design."
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
+            <OfferList text="Step-by-Step Video Lessons" status="active" />
+            <OfferList text="Creative Assignments" status="active" />
+            <OfferList text="Community Group Access" status="active" />
             <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="inactive" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="Lifetime Access to Modules" status="inactive" />
           </PricingBox>
           <PricingBox
-            packageName="Basic"
+            packageName="✨ Pro"
             price={isMonthly ? "399" : "789"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="For serious learners ready to build a creative portfolio and go pro."
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="Full Access to Core Subjects" status="active" />
+            <OfferList text="Studio-Based Learning Projects" status="active" />
+            <OfferList text="Portfolio Starter Kit" status="active" />
+            <OfferList text="Priority Support" status="active" />
+            <OfferList text="Ongoing Content Updates" status="active" />
           </PricingBox>
           <PricingBox
-            packageName="Plus"
+            packageName="🚀 Master"
             price={isMonthly ? "589" : "999"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Everything you need to launch your career in design or start your own studio."
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="active" />
+            <OfferList text="All Courses + Masterclasses" status="active" />
+            <OfferList text="Live Critiques & Career Talks" status="active" />
+            <OfferList text="Certificate on Completion" status="active" />
+            <OfferList text="Job & Internship Support" status="active" />
+            <OfferList text="Full Lifetime Access" status="active" />
           </PricingBox>
         </div>
       </div>

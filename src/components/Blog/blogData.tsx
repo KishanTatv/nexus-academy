@@ -9,7 +9,7 @@ import Auth_3 from "../../../public/images/blog/author-03.png"
 const blogData: Blog[] = [
   {
     id: 1,
-    title: "Best UI components for modern websites",
+    title: "Jacquard Design",
     paragraph:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
     image: blo1_Img.src,
@@ -23,7 +23,7 @@ const blogData: Blog[] = [
   },
   {
     id: 2,
-    title: "9 simple ways to improve your design skills",
+    title: "Digital Print",
     paragraph:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
     image: blo2_Img.src,
@@ -37,7 +37,49 @@ const blogData: Blog[] = [
   },
   {
     id: 3,
-    title: "Tips to quickly improve your coding speed.",
+    title: "Embroidery Design",
+    paragraph:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+    image: blo3_Img.src,
+    author: {
+      name: "Lethium Deo",
+      image: Auth_3.src,
+      designation: "Graphic Designer",
+    },
+    tags: ["design"],
+    publishDate: "2025",
+  },
+  {
+    id: 4,
+    title: "Jewellery Design",
+    paragraph:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+    image: blo3_Img.src,
+    author: {
+      name: "Lethium Deo",
+      image: Auth_3.src,
+      designation: "Graphic Designer",
+    },
+    tags: ["design"],
+    publishDate: "2025",
+  },
+  {
+    id: 5,
+    title: "Graphic Design",
+    paragraph:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+    image: blo3_Img.src,
+    author: {
+      name: "Lethium Deo",
+      image: Auth_3.src,
+      designation: "Graphic Designer",
+    },
+    tags: ["design"],
+    publishDate: "2025",
+  },
+  {
+    id: 6,
+    title: "HotFix Design",
     paragraph:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
     image: blo3_Img.src,
