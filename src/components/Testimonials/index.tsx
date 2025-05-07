@@ -1,6 +1,9 @@
 import { Testimonial } from "@/types/testimonial";
 import SectionTitle from "../Common/SectionTitle";
 import SingleTestimonial from "./SingleTestimonial";
+import Auth_1 from "../../../public/images/testimonials/auth-01.png"
+import Auth_2 from "../../../public/images/testimonials/auth-02.png"
+import Auth_3 from "../../../public/images/testimonials/auth-03.png"
 
 const testimonialData: Testimonial[] = [
   {
@@ -9,7 +12,7 @@ const testimonialData: Testimonial[] = [
     designation: "Founder @TailGrids",
     content:
       "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-01.png",
+    image: Auth_1.src,
     star: 5,
   },
   {
@@ -18,7 +21,7 @@ const testimonialData: Testimonial[] = [
     designation: "Founder @UIdeck",
     content:
       "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-02.png",
+    image: Auth_2.src,
     star: 5,
   },
   {
@@ -27,7 +30,7 @@ const testimonialData: Testimonial[] = [
     designation: "Founder @Lineicons",
     content:
       "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-03.png",
+    image: Auth_3.src,
     star: 5,
   },
 ];

@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import headerImg from "../../../public/images/logo/header-img-2.png"
 
 const Footer = () => {
   return (
@@ -12,17 +13,17 @@ const Footer = () => {
               <div className="mb-12 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-block">
                   <Image
-                    src="/images/logo/logo-2.svg"
+                    src={headerImg.src}
                     alt="logo"
                     className="w-full dark:hidden"
-                    width={140}
+                    width={105}
                     height={30}
                   />
                   <Image
-                    src="/images/logo/logo.svg"
+                    src={headerImg.src}
                     alt="logo"
                     className="hidden w-full dark:block"
-                    width={140}
+                    width={105}
                     height={30}
                   />
                 </Link>
