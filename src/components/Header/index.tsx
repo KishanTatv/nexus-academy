@@ -71,7 +71,7 @@ const Header = () => {
                 />
               </Link>
             </div>
-            <div className="flex w-full items-center justify-center px-4">
+            <div className="flex w-full items-center justify-end px-4">
               <div>
                 <button
                   onClick={navbarToggleHandler}
@@ -98,6 +98,7 @@ const Header = () => {
                     ? "visibility top-full opacity-100"
                     : "invisible top-[120%] opacity-0"
                     }`}
+                  onClick={navbarToggleHandler}
                 >
                   <ul className="block lg:flex lg:space-x-12">
                     {menuData.map((menuItem, index) => (
