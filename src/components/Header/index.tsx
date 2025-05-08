@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
 import headerImg from "../../../public/images/logo/header-img-2.png"
-import headerDarkImg from "../../../public/images/logo/header-dark.png"
 
 const Header = () => {
   // Navbar toggle
