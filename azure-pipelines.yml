@@ -23,10 +23,10 @@ steps:
   displayName: 'Build project'
 
 
-
 - script: |
-    dir $(Build.SourcesDirectory)/nexus-academy/out /s
+    dir "$(Build.SourcesDirectory)\nexus-academy\out" /s
   displayName: 'Check exported files'
+
 
 - task: CopyFiles@2
   inputs:
