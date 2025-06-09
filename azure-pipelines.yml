@@ -16,23 +16,15 @@ steps:
     displayName: 'Install Node.js'
 
 - script: |
-    cd nexus-academy
     npm install
     npm run build
-    npm run export
   displayName: 'Build project'
 
-
-- script: |
-    dir "$(Build.SourcesDirectory)\nexus-academy\out" /s
-  displayName: 'Check exported files'
-
-
-- task: CopyFiles@2
-  inputs:
-    SourceFolder: '$(Build.SourcesDirectory)/nexus-academy/out'
-    Contents: '**'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+# - task: CopyFiles@2
+#   inputs:
+#     SourceFolder: '$(Build.SourcesDirectory)/dist/'
+#     Contents: '**'
+#     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
 - task: PublishBuildArtifacts@1
   inputs:
