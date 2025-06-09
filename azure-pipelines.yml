@@ -16,20 +16,21 @@ steps:
     displayName: 'Install Node.js'
 
 - script: |
+    cd nexus-academy
     npm install
     npm run build
     npm run export
   displayName: 'Build project'
 
 
+
 - script: |
-    echo "Check output structure:"
-    dir $(Build.SourcesDirectory) /s
-  displayName: 'Check directory structure'
+    dir $(Build.SourcesDirectory)/nexus-academy/out /s
+  displayName: 'Check exported files'
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(Build.SourcesDirectory)/out'
+    SourceFolder: '$(Build.SourcesDirectory)/nexus-academy/out'
     Contents: '**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
