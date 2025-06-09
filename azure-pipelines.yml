@@ -21,11 +21,6 @@ steps:
     npm run export
   displayName: 'Build project'
 
-- script: |
-    ls out
-  displayName: 'Verify output directory'
-
-
 - task: CopyFiles@2
   inputs:
     contents: 'out/**'
