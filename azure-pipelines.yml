@@ -20,9 +20,15 @@ steps:
     npm run build
   displayName: 'Build project'
 
+
+- script: |
+    echo "Check output structure:"
+    dir $(Build.SourcesDirectory) /s
+  displayName: 'Check directory structure'
+
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(PathToPackageTmpFolder)'
+    SourceFolder: '$(Build.SourcesDirectory)/dist/nexus-academy'
     Contents: '**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
