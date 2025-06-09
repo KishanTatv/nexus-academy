@@ -13,7 +13,7 @@ steps:
 - task: NodeTool@0
   inputs:
     versionSpec: '18.x'
-  displayName: 'Install Node.js'
+    displayName: 'Install Node.js'
 
 - script: |
     npm install
@@ -22,7 +22,7 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'dist'
+    SourceFolder: '$(Build.SourcesDirectory)/dist'
     Contents: '**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
